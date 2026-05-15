@@ -1,0 +1,16 @@
+# large single-cell data
+*.h5ad
+
+# python cache
+__pycache__/
+*.pyc
+
+# jupyter checkpoints
+.ipynb_checkpoints/
+
+# vscode
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
