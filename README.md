@@ -1,8 +1,8 @@
-\# Trophoblast state and immune signaling at the maternal–fetal interface
+# Trophoblast state and immune signaling at the maternal–fetal interface
 
 
 
-\## Biological question
+## Biological question
 
 
 
@@ -12,19 +12,19 @@ Do distinct trophoblast states associate with different immune-regulatory signal
 
 More specifically:
 
-\- Are EVT, SCT, and VCT associated with distinct ligand programs?
+- Are EVT, SCT, and VCT associated with distinct ligand programs?
 
-\- Which decidual immune populations are positioned to receive those signals?
+- Which decidual immune populations are positioned to receive those signals?
 
-\- Do immune activation/tolerance states vary continuously within canonical immune subtypes?
-
-
-
-\---
+- Do immune activation/tolerance states vary continuously within canonical immune subtypes?
 
 
 
-\## Dataset
+---
+
+
+
+## Dataset
 
 
 
@@ -34,11 +34,11 @@ Single-cell first-trimester maternal–fetal interface atlas from Vento-Tormo et
 
 Primary cell populations analyzed:
 
-\- Trophoblasts: EVT, SCT, VCT
+- Trophoblasts: EVT, SCT, VCT
 
 
 
-\- Immune populations: decidual NK cells, T cells, decidual macrophages
+- Immune populations: decidual NK cells, T cells, decidual macrophages
 
 Immune populations follow the original decidual immune annotations from the Vento-Tormo first-trimester placenta atlas.
 
@@ -48,11 +48,11 @@ Citations for all marker gene choices are at the bottom of this README.
 
 
 
-\---
+---
 
 
 
-\## Analysis workflow
+## Analysis workflow
 
 
 
@@ -70,11 +70,11 @@ Citations for all marker gene choices are at the bottom of this README.
 
 
 
-\---
+---
 
 
 
-\# Trophoblast state analysis
+# Trophoblast state analysis
 
 
 
@@ -84,25 +84,18 @@ Marker-based trophoblast state orientation across first-trimester placental trop
 
 The following were used as trophoblast markers
 
-
-
-| Trophoblast state | Core markers | Supportive markers | Notes                                                |
-
-| ----------------- | ------------ | ------------------ | ---------------------------------------------------- |
-
-| EVT               | HLA-G        | ITGA5, ERBB2       | Invasive extravillous trophoblast-associated program |
-
-| SCT               | CGA, CGB     | LGALS16            | Syncytial/endocrine trophoblast program              |
-
-| VCT               | KRT7, EGFR   | —                  | Villous epithelial/progenitor trophoblast state      |
-
+| Trophoblast state | Core markers | Supportive markers | Notes |
+|-------------------|--------------|--------------------|-------|
+| EVT | HLA-G | ITGA5, ERBB2 | Invasive extravillous trophoblast-associated program |
+| SCT | CGA, CGB | LGALS16 | Syncytial/endocrine trophoblast program |
+| VCT | KRT7, EGFR | — | Villous epithelial/progenitor trophoblast state |
 
 
 Marker sets were used as state-orientation aids rather than absolute cell-type definitions, as trophoblast markers are often shared, transitional, or context-dependent across placental differentiation states.
 
 
 
-![Trophoblast marker UMAPs](figures/trophoblast\_marker\_umaps.png)
+![Trophoblast marker UMAPs](figures/trophoblast_marker_umaps.png)
 
 
 
@@ -128,15 +121,15 @@ SCT (syncytiotrophoblast) is a hormone-producing trophoblast layer, so we expect
 
 Marker genes:
 
-\- \*\*HLA-G\*\* — immunomodulatory HLA molecule associated with EVT
+- \*\*HLA-G\*\* — immunomodulatory HLA molecule associated with EVT
 
-\- \*\*CGA / CGB\*\* — subunits of human chorionic gonadotropin (hCG)
+- \*\*CGA / CGB\*\* — subunits of human chorionic gonadotropin (hCG)
 
-\- \*\*KRT7\*\* — broadly expressed trophoblast epithelial marker
+- \*\*KRT7\*\* — broadly expressed trophoblast epithelial marker
 
 
 
-![Trophoblast marker validation](figures/trophoblast\_marker\_violins.png)
+![Trophoblast marker validation](figures/trophoblast_marker_violins.png)
 
 
 
@@ -168,7 +161,7 @@ The VCT/progenitor program (KRT7, TEAD4, TP63) was designed to capture broader t
 
 
 
-![Trophoblast programs](figures/trophoblast\_programs\_violins.png)
+![Trophoblast programs](figures/trophoblast_programs_violins.png)
 
 
 
@@ -176,7 +169,7 @@ These program scores support the interpretation that trophoblast populations occ
 
 
 
-\## Immune ligand program curation
+## Immune ligand program curation
 
 
 
@@ -192,11 +185,11 @@ Complete program definitions, rationale, and supporting references are provided 
 
 
 
-`tables/immune\_ligand\_programs.xlsx`
+`tables/immune_ligand_programs.xlsx`
 
 
 
-![Immune Ligands](figures/trophoblast\_immune\_program\_umaps.png)
+![Immune Ligands](figures/trophoblast_immune_program_umaps.png)
 
 
 
@@ -208,38 +201,38 @@ Having observed ligand-program gradients across the trophoblast UMAP, I next sum
 
 This step asks: which ligand programs are most enriched, on average, in VCT, EVT, and SCT?
 
-![Ligand Program Enrichment](figures/trophoblast\_immune\_program\_umaps.png)
+![Ligand Program Enrichment](figures/trophoblast_immune_program_umaps.png)
 
 
-\## Key observations
-
-
-
-\- EVT are strongly enriched for immune-regulatory ligand programs
-
-\- Decidual NK populations show the strongest compatible receptor signatures
-
-\- Immune functional states vary continuously within canonical immune subtypes
-
-\- Trophoblast state better predicts tolerance-associated signaling than inflammatory signaling
+## Key observations
 
 
 
-\---
+- EVT are strongly enriched for immune-regulatory ligand programs
+
+- Decidual NK populations show the strongest compatible receptor signatures
+
+- Immune functional states vary continuously within canonical immune subtypes
+
+- Trophoblast state better predicts tolerance-associated signaling than inflammatory signaling
 
 
 
-\## Planned extensions
+---
 
 
 
-\- Orthogonal ligand–receptor validation with CellPhoneDB
+## Planned extensions
 
-\- Integration of xenobiotic/stress-response programs
 
-\- Cross-dataset projection into independent placenta atlases
 
-\- Comparison against pathological pregnancy states
+- Orthogonal ligand–receptor validation with CellPhoneDB
+
+- Integration of xenobiotic/stress-response programs
+
+- Cross-dataset projection into independent placenta atlases
+
+- Comparison against pathological pregnancy states
 
 
 
