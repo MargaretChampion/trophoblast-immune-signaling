@@ -102,7 +102,7 @@ Marker sets were used as state-orientation aids rather than absolute cell-type d
 
 
 
-!\[Trophoblast marker UMAPs](figures/trophoblast\_marker\_umaps.png)
+![Trophoblast marker UMAPs](figures/trophoblast\_marker\_umaps.png)
 
 
 
@@ -136,7 +136,7 @@ Marker genes:
 
 
 
-!\[Trophoblast marker validation](figures/trophoblast\_marker\_violins.png)
+![Trophoblast marker validation](figures/trophoblast\_marker\_violins.png)
 
 
 
@@ -168,7 +168,7 @@ The VCT/progenitor program (KRT7, TEAD4, TP63) was designed to capture broader t
 
 
 
-!\[Trophoblast programs](figures/trophoblast\_programs\_violins.png)
+![Trophoblast programs](figures/trophoblast\_programs\_violins.png)
 
 
 
@@ -196,7 +196,7 @@ Complete program definitions, rationale, and supporting references are provided 
 
 
 
-!\[Immune Ligands](figures/trophoblast\_immune\_program\_umaps.png)
+![Immune Ligands](figures/trophoblast\_immune\_program\_umaps.png)
 
 
 
@@ -208,7 +208,7 @@ Having observed ligand-program gradients across the trophoblast UMAP, I next sum
 
 This step asks: which ligand programs are most enriched, on average, in VCT, EVT, and SCT?
 
-!\[Ligand Program Enrichment](figures/trophoblast\_immune\_program\_umaps.png)
+![Ligand Program Enrichment](figures/trophoblast\_immune\_program\_umaps.png)
 
 
 \## Key observations
